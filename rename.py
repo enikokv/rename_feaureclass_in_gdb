@@ -8,7 +8,7 @@ import arcpy
 from arcpy import env
 
 #path to folder where the geodatabases are saved
-env.workspace = r'\\DATASERVER1\ScienceData$\ekelly\Documents\AGOL\Live_on_AC'
+env.workspace = r'\\yourData'
 
 fclist = []
 for dirpath, dirnames, filenames in arcpy.da.Walk(env.workspace,datatype="FeatureClass"):
